@@ -11,7 +11,7 @@ description: 5
 <span class="pln">
 </span></code></pre>
 <p>You need to post the request to the address above. If you want to unsubscribe, just change the word at the end of the URL. You should send the information below in the header.</p>
-<br><img style="width: 400.00px" src="https://raw.githubusercontent.com/SinanYilmaz9/PushKitCodelabPage/main/assets/manifestService.PNG" onclick="imageclick(src)">
+<br><img style="width: 400.00px" src="https://raw.githubusercontent.com/SinanYilmaz9/PushKitCodelabPage/main/assets/manifestService.png" onclick="imageclick(src)">
 
 <p>And your request message body;</p>
 <pre><div id="copy-button34" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>  { "topic": "DRINK_WATER_DAILY",
@@ -28,7 +28,7 @@ description: 5
 <span class="pln">
 </span></code></pre>
 <p>We have the same header parameters.</p>
-<br><img style="width: 400.00px" src="https://raw.githubusercontent.com/SinanYilmaz9/PushKitCodelabPage/main/assets/manifestService.PNG" onclick="imageclick(src)">
+<br><img style="width: 400.00px" src="https://raw.githubusercontent.com/SinanYilmaz9/PushKitCodelabPage/main/assets/manifestService.png" onclick="imageclick(src)">
 <p>Sample code for request body</p>
 <pre><div id="copy-button36" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>  { "validate_only": false, 
 "message": { 
@@ -55,7 +55,7 @@ description: 5
 This function enables you to send topic-based messages based on a combination of conditions, or in another word, a Boolean expression of target topics. For example, you can send messages to users who have subscribed to both the DRINK_WATER_DAILY and DRINK_WATER_WEEKLY topics.
 
 All we have to do is use condition key in request body when sending the notification.</p>
-<pre><div id="copy-button36" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>  
+<pre><div id="copy-button37" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>  
 { "validate_only": false, 
 "message": { 
 	"notification": { 
@@ -75,5 +75,5 @@ All we have to do is use condition key in request body when sending the notifica
 <span class="pln">
 </span></code></pre>
 <p>After sending the notification request, it must have been on the notification device.</p>
-<br><img style="width: 400.00px" src="https://raw.githubusercontent.com/SinanYilmaz9/PushKitCodelabPage/main/assets/notifFromServer.PNG" onclick="imageclick(src)">
+<br><img style="width: 400.00px" src="https://raw.githubusercontent.com/SinanYilmaz9/PushKitCodelabPage/main/assets/notifFromServer.png" onclick="imageclick(src)">
 </ol>
