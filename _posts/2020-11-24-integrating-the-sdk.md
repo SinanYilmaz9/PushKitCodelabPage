@@ -7,7 +7,7 @@ description: 5
 
 <h2><strong>Creating a Project</strong></h2>
 <p><strong>Step 1</strong>: Start Android Studio.</p>
-<p><strong>Step 2</strong>: Choose <strong>File</strong> &gt; <strong>Open</strong>, go to the directory where the sample project is decompressed, and click <strong>OK</strong>.<br><img style="width: 376.00px" src="https://raw.githubusercontent.com/SinanYilmaz9/pushkitcodelabpage/main/assets/pushkitcodelab.PNG" onclick="imageclick(src)"></p>
+<p><strong>Step 2</strong>: Choose <strong>File</strong> &gt; <strong>Open</strong>, go to the directory where the sample project is decompressed, and click <strong>OK</strong>.<br><img style="width: 376.00px" src="https://raw.githubusercontent.com/SinanYilmaz9/pushkitcodelabpage/main/assets/pushkitcodelab.png" onclick="imageclick(src)"></p>
 <p><strong>Step 3</strong>: Configure the AppGallery Connect plug-in, Maven repository address, build dependencies, obfuscation scripts, and permissions. (These items have been configured in the sample code. If any of them does not meet your requirements, change it in your own project.)</p>
 <p><strong>1. Configure the Maven repository address and AppGallery Connect plug-in in the project's build.gradle file.</strong></p>
 <ul>
@@ -85,10 +85,10 @@ description: 5
 <p><strong>4. Configure permissions in the AndroidManifest.xml file.</strong></p>
 <pre><div id="copy-button9" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code><span class="tag">&lt;uses-permission</span><span class="pln"> </span><span class="atn">android:name</span><span class="pun">=</span><span class="atv">"android.permission.INTERNET"</span><span class="tag">/&gt;</span></code></pre>
 <p><strong>Configure service in the AndroidManifest.xml file.</strong></p>
-<br><img style="width: 400.00px" src="https://raw.githubusercontent.com/SinanYilmaz9/PushKitCodelabPage/main/assets/manifestService.PNG" onclick="imageclick(src)">
+<br><img style="width: 400.00px" src="https://raw.githubusercontent.com/SinanYilmaz9/PushKitCodelabPage/main/assets/manifestService.png" onclick="imageclick(src)">
 
 <p><strong>5. In PushKitCodelabService.kt file, update your service class</strong></p>
-<pre><div id="copy-button35" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>  // TODO 2.1 : Add your service class
+<pre><div id="copy-button37" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>  // TODO 2.1 : Add your service class
 class PushKitCodelabService : HmsMessageService() {
 
     override fun onNewToken(token: String?) {
@@ -130,6 +130,7 @@ class PushKitCodelabService : HmsMessageService() {
     }
 }
 <span class="pln">
+</code></pre>
 
 
 <p><strong>Step 4</strong>: In the Android Studio window, choose <strong>File</strong> &gt; <strong>Sync Project with Gradle Files</strong> to synchronize the project.</p>
