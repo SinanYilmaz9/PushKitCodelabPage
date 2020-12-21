@@ -11,4 +11,19 @@ description: 2
 	<li>Activate any option you want.</li>
 </ol>
 <img style="width: 220.00px" src="https://raw.githubusercontent.com/SinanYilmaz9/PushKitCodelabPage/main/assets/remindwaterss.jpg" onclick="imageclick(src)">
+<ol type="1">
+<li>Sign in to AppGallery Connect, select My projects, find your project from the project list, and click the app for which you need to create a task. Go to Growing > Push Kit > Notifications. Click Add notification to create a task.</li>
+<li>You can fill in the notification contents as the user understands.</li>
+</ol>
+<img style="width: 400.00px" src="https://raw.githubusercontent.com/SinanYilmaz9/PushKitCodelabPage/main/assets/pushConsole1.jpg" onclick="imageclick(src)">
+<ol type="1">
+<li>Later, select "Push Scope" as "Subscriber" and choose which topic you want to send the notification to.</li>
+</ol>
+<img style="width: 400.00px" src="https://raw.githubusercontent.com/SinanYilmaz9/PushKitCodelabPage/main/assets/pushConsole2.jpg" onclick="imageclick(src)">
+<ol type="1">
+<li>Finally, under the push time header, select the time to send the notification and press Submit button.</li>
+</ol>
+<img style="width: 220.00px" src="https://raw.githubusercontent.com/SinanYilmaz9/PushKitCodelabPage/main/assets/notifFromConsole.jpg" onclick="imageclick(src)">
+
+
 
