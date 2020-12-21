@@ -88,7 +88,48 @@ description: 5
 <br><img style="width: 400.00px" src="https://raw.githubusercontent.com/SinanYilmaz9/PushKitCodelabPage/main/assets/manifestService.PNG" onclick="imageclick(src)">
 
 <p><strong>5. In PushKitCodelabService.kt file, update your service class</strong></p>
-<br><img style="width: 400.00px" src="https://raw.githubusercontent.com/SinanYilmaz9/PushKitCodelabPage/main/assets/serviceClass.PNG" onclick="imageclick(src)">
+<pre><div id="copy-button35" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>  // TODO 2.1 : Add your service class
+class PushKitCodelabService : HmsMessageService() {
+
+    override fun onNewToken(token: String?) {
+        super.onNewToken(token)
+        Log.i(TAG, "onNewToken token: $token")
+        //sendYourServer(token)
+    }
+
+    override fun onMessageReceived(remoteMessage: RemoteMessage?) {
+        super.onMessageReceived(remoteMessage)
+        Log.i(TAG, "onMessageReceived is called")
+
+        if (remoteMessage == null) {
+            Log.e(TAG, "Received message entity is null!")
+            return
+        }
+
+        Log.i(
+            TAG, "getCollapseKey: " + remoteMessage.collapseKey
+                    + "\n getData: " + remoteMessage.data
+                    + "\n getFrom: " + remoteMessage.from
+                    + "\n getTo: " + remoteMessage.to
+                    + "\n getMessageId: " + remoteMessage.messageId
+                    + "\n getOriginalUrgency: " + remoteMessage.originalUrgency
+                    + "\n getUrgency: " + remoteMessage.urgency
+                    + "\n getSendTime: " + remoteMessage.sentTime
+                    + "\n getMessageType: " + remoteMessage.messageType
+                    + "\n getTtl: " + remoteMessage.ttl
+        )
+    }
+
+    override fun onTokenError(e: Exception?) {
+        super.onTokenError(e)
+        Log.e(TAG, "onTokenError: ", e)
+    }
+
+    companion object {
+        private const val TAG = "PushCodelabServiceLog"
+    }
+}
+<span class="pln">
 
 
 <p><strong>Step 4</strong>: In the Android Studio window, choose <strong>File</strong> &gt; <strong>Sync Project with Gradle Files</strong> to synchronize the project.</p>

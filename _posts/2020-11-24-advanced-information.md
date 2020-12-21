@@ -11,7 +11,7 @@ description: 5
 <span class="pln">
 </span></code></pre>
 <p>You need to post the request to the address above. If you want to unsubscribe, just change the word at the end of the URL. You should send the information below in the header.</p>
-<br><img style="width: 400.00px" src="https://raw.githubusercontent.com/SinanYilmaz9/PushKitCodelabPage/main/assets/manifestService.png" onclick="imageclick(src)">
+<br><img style="width: 400.00px" src="https://raw.githubusercontent.com/SinanYilmaz9/PushKitCodelabPage/main/assets/tableHeader.png" onclick="imageclick(src)">
 
 <p>And your request message body;</p>
 <pre><div id="copy-button34" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>  { "topic": "DRINK_WATER_DAILY",
@@ -28,7 +28,7 @@ description: 5
 <span class="pln">
 </span></code></pre>
 <p>We have the same header parameters.</p>
-<br><img style="width: 400.00px" src="https://raw.githubusercontent.com/SinanYilmaz9/PushKitCodelabPage/main/assets/manifestService.png" onclick="imageclick(src)">
+<br><img style="width: 400.00px" src="https://raw.githubusercontent.com/SinanYilmaz9/PushKitCodelabPage/main/assets/tableHeader.png" onclick="imageclick(src)">
 <p>Sample code for request body</p>
 <pre><div id="copy-button36" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>  { "validate_only": false, 
 "message": { 
