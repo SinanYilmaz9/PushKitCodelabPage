@@ -85,10 +85,20 @@ description: 5
 <p><strong>4. Configure permissions in the AndroidManifest.xml file.</strong></p>
 <pre><div id="copy-button9" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code><span class="tag">&lt;uses-permission</span><span class="pln"> </span><span class="atn">android:name</span><span class="pun">=</span><span class="atv">"android.permission.INTERNET"</span><span class="tag">/&gt;</span></code></pre>
 <p><strong>Configure service in the AndroidManifest.xml file.</strong></p>
-<br><img style="width: 400.00px" src="https://raw.githubusercontent.com/SinanYilmaz9/PushKitCodelabPage/main/assets/manifestService.png" onclick="imageclick(src)">
+<pre><div id="copy-button37" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>  // TODO 2.1 : Add your service class
+        <service
+            android:name=".com.hms.codelab.push.topicbased.service.PushKitCodelabService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+</code></pre>
+
 
 <p><strong>5. In PushKitCodelabService.kt file, update your service class</strong></p>
-<pre><div id="copy-button37" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>  // TODO 2.1 : Add your service class
+<pre><div id="copy-button38" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>  // TODO 2.1 : Add your service class
 class PushKitCodelabService : HmsMessageService() {
 
     override fun onNewToken(token: String?) {
