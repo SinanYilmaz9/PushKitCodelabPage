@@ -4,16 +4,14 @@ description: 15
 ---
 
 <p><strong>1. In MainViewModel.kt file, get your APP ID. You can access your app id from  agconnect-services.json file.</strong></p>
-<pre><div id="copy-button10" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>    //
-TODO 3.0: Get your APP ID	
+<pre><div id="copy-button10" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>    // TODO 3.0: Get your APP ID	
 val appId = AGConnectServicesConfig.fromContext(getApplication()).getString("your_app_id")
 
 <span class="pln">
 </span></code></pre>
 <p><strong>2. Next step, get token for push transactions. Now add this line and get your token.
 </strong></p>
-<pre><div id="copy-button11" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>    //
-TODO 3.1: Get your token
+<pre><div id="copy-button11" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>    // TODO 3.1: Get your token
 val token = HmsInstanceId.getInstance(getApplication()).getToken(appId, "HCM")
 Log.i(TAG, "get token:$token")
 
