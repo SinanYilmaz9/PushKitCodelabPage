@@ -85,16 +85,8 @@ description: 5
 <p><strong>4. Configure permissions in the AndroidManifest.xml file.</strong></p>
 <pre><div id="copy-button9" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code><span class="tag">&lt;uses-permission</span><span class="pln"> </span><span class="atn">android:name</span><span class="pun">=</span><span class="atv">"android.permission.INTERNET"</span><span class="tag">/&gt;</span></code></pre>
 <p><strong>Configure service in the AndroidManifest.xml file.</strong></p>
-<pre><div id="copy-button37" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>  // TODO 2.0 : Your push service 
-        <service
-            android:name=".com.hms.codelab.push.topicbased.service.PushKitCodelabService"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
-            </intent-filter>
-        </service>
+<p><a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/SinanYilmaz9/PushKitCodelabPage/main/assets/manifestService.png"><img src="https://raw.githubusercontent.com/SinanYilmaz9/PushKitCodelabPage/main/assets/manifestService.png" style="max-width:100%;"></a></p>
 
-</code></pre>
 
 
 <p><strong>5. In PushKitCodelabService.kt file, update your service class</strong></p>
